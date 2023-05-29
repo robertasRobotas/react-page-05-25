@@ -1,0 +1,60 @@
+.navbar{
+    background-color: chocolate;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color: rgb(71, 67, 67);
+   
+}
+
+.menuBurger{
+    height: 20px;
+    width: 20px;
+
+}
+
+.navButton{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+
+    /* .nav-button{
+    } */
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .navButton{
+        display: none;
+    }
+
+ 
+  }

@@ -1,15 +1,15 @@
-import Navbar from './components/Navbar'
-import Content from './components/Content'
-import Footer from './components/Footer'
+import Navbar from "./components/navbar/Navbar";
+import Content from "./components/content/Content";
+import Footer from "./components/footer/Footer";
 
-const App = ()=> {
+const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Content/>
-      <Footer/>
+      <Navbar />
+      <Content />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
