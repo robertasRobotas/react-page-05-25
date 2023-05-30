@@ -1,14 +1,17 @@
-import Navbar from "./components/navbar/Navbar";
-import Content from "./components/content/Content";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/main/Main";
+import RealEstate from "./pages/realEstate/RealEstate";
+import Contacts from "./pages/contacts/Contacts";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Content />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/estate" element={<RealEstate />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

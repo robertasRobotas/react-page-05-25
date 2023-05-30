@@ -1,12 +1,13 @@
 .navbar{
-    background-color: chocolate;
+    background-color: #AE8B68;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 40px;
+    color:white;
+    margin-bottom:30px;
 }
 
 .logo{
@@ -20,7 +21,7 @@
 }
 
 .menu li a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;

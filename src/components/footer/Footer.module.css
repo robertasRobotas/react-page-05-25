@@ -1,8 +1,10 @@
 .footer{
-    background-color: darkolivegreen;
-    margin-top:40px;
-    height: 80px;
+    background-color: #AE8B68;
+    height: 60px;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    margin-top:30px;
 }

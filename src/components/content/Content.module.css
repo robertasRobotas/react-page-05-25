@@ -1,8 +1,9 @@
 .content{
     background-color: rgb(82, 82, 161);
-    height: 500px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap:24px;
 }
 

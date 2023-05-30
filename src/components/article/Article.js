@@ -5,6 +5,7 @@ const Article = (props) => {
   return (
     <div>
       <img className={styles.image} src={props.img} />
+      <h6>{props.author}</h6>
       <h2>{props.title}</h2>
     </div>
   );

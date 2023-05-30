@@ -6,13 +6,13 @@ const Navbar = () => {
       <h1 className={styles.logo}>NT Broker1</h1>
       <ul className={styles.menu}>
         <li>
-          <a href="">Apie</a>
+          <a href="/">Apie</a>
         </li>
         <li>
-          <a href="">Objektai</a>
+          <a href="/estate">Objektai</a>
         </li>
         <li>
-          <a href="">Kontaktai</a>
+          <a href="/contacts">Kontaktai</a>
         </li>
       </ul>
       <button className={styles.navButton}>
