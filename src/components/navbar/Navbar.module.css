@@ -20,6 +20,37 @@
     gap: 16px;
 }
 
+.mobileMenuWrapper{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 110px);
+    background-color: #AE8B68;
+    transition: .3s;
+}
+
+.menuClosed{
+    right:900px
+}
+
+.menuOpen{
+    right:0px
+}
+
+
+.mobileMenu{
+display: flex;
+flex-direction: column;
+gap: 20px;
+list-style-type: none;
+}
+
+.mobileMenu li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+
 .menu li a{
     color: white;
     text-decoration: none;
@@ -54,6 +85,10 @@
   @media only screen and (min-width: 768px) {
 
     .navButton{
+        display: none;
+    }
+
+    .mobileMenuWrapper{
         display: none;
     }
 

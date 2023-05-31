@@ -1,10 +1,31 @@
 import styles from "./Navbar.module.css";
 import burger from "../../assets/burger.png";
-const Navbar = () => {
+import { useState } from "react";
+
+const DesktopMenu = () => {
   return (
-    <div className={styles.navbar}>
-      <h1 className={styles.logo}>NT Broker1</h1>
-      <ul className={styles.menu}>
+    <ul className={styles.menu}>
+      <li>
+        <a href="/">Apie</a>
+      </li>
+      <li>
+        <a href="/estate">Objektai</a>
+      </li>
+      <li>
+        <a href="/contacts">Kontaktai</a>
+      </li>
+    </ul>
+  );
+};
+
+const MobileMenu = (props) => {
+  return (
+    <div
+      className={`${styles.mobileMenuWrapper} ${
+        props.isMenuOpen ? styles.menuOpen : styles.menuClosed
+      } `}
+    >
+      <ul className={styles.mobileMenu}>
         <li>
           <a href="/">Apie</a>
         </li>
@@ -15,10 +36,28 @@ const Navbar = () => {
           <a href="/contacts">Kontaktai</a>
         </li>
       </ul>
-      <button className={styles.navButton}>
-        <img className={styles.menuBurger} src={burger} />
-      </button>
     </div>
+  );
+};
+const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <>
+      <div className={styles.navbar}>
+        <h1 className={styles.logo}>NT Broker1</h1>
+        <DesktopMenu />
+        <button
+          onClick={() => {
+            setMenuOpen((prevState) => !prevState);
+          }}
+          className={styles.navButton}
+        >
+          <img className={styles.menuBurger} src={burger} />
+        </button>
+      </div>
+      <MobileMenu isMenuOpen={isMenuOpen} />
+    </>
   );
 };
 
